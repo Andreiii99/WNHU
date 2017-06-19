@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Exclusive</title>
+  <style>
+#vplayer00187eeb {
+	width: 987px; /* Ширина блока */
+}
+body {
+    margin: 0px; /*Отступы вокруг */
+}
+.child {
+    border: 3px solid #514444; /* Параметры рамки */
+    background: #514444; /* Цвет фона */ 
+    height: 640px; /* Высота блока */
+    width: 994px; /* Ширина блока */
+}
+.child #volnorez_chat {
+    height: 601px; /* Высота блока */
+    width: 994px; /* Ширина блока */
+}
+.child #vplayer001d42c9 {
+    width: 994px; /* Ширина блока */
+}
+</style>
+</head> 
+<body> 
+<div class="child"> 
+<div id="vplayer001d42c9">
+<a href="http://volnorez.com/wnhu" title="радио WNHU">радио WNHU</a>
+<script async type="text/javascript" src="//volnorez.com/plugins/jscode/player_js/001d42c9/%7B%22autoplay%22%3Atrue%2C%22share%22%3A%22source%22%2C%22skin%22%3A%22default%22%2C%22style%22%3A%7B%7D%7D"></script>
+</div>
+<div id="volnorez_chat" data-code="001d42c9" data-skin-params="'bg_clr':'71,57,57','txt_clr':'255,218,207','b_clr':'54,46,46','icon_clr':'61,10,10','btnt_clr':'255,222,207','panel_clr':'81,68,68','msgbg_clr':'90,78,78','omsgbg_clr':'106,95,95','ib_clr':'121,111,111','label_clr':'223,191,181'">
+<script async type="text/javascript" src="//volnorez.com/plugins/jscode/chat_js"></script>
+</div>
+</div>
+</body>
+</html>
