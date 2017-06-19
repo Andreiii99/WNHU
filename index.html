@@ -1,45 +1,95 @@
+body {
+	font-family: sans-serif;
+ 	background:  no-repeat center center fixed; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#window{
+    display: none;
+    width: 200px;
+    height: 20px;
+
+    background-color: #323B55; 
+    border-radius: 20px;
+    float: right;
+    top: 1%;
+
+    font-family: sans-serif;
+    color: white;
+    }    
+    a {color:white;}
+    a:hover { color:white;}
+ #center_img{
+ 	 float: left;
+    position: relative;
+    left: 50%;
+ }
+ #logo_img{
+ 	float: left;
+    position: relative;
+    left: -50%;
+
+ }
+
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Exclusive</title>
-  <style>
-#vplayer00187eeb {
-	width: 987px; /* Ширина блока */
-}
-body {
-    margin: 0px; /*Отступы вокруг */
-}
-.child {
-    border: 3px solid #514444; /* Параметры рамки */
-    background: #514444; /* Цвет фона */ 
-    height: 640px; /* Высота блока */
-    width: 994px; /* Ширина блока */
-}
-.child childd div#volnorez_chat {
-    height: 601px; /* Высота блока */
-    width: 994px; /* Ширина блока */
-}
-.child childd div#vplayer001d42c9 {
-    width: 994px; /* Ширина блока */
-}
-.childd {
-    width: 994px; /* Ширина блока */
-	height: 640px; /* Высота блока */
-}
-</style>
-</head> 
-<body> 
-<div class="child"> 
-	<div class="childd"> 
-<div id="vplayer001d42c9">
+
+<head>
+    <meta charset="utf-8">
+    <title>Radio</title>
+    <link rel="stylesheet" type="text/css" href="/css/radio.css" />
+    
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64}t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},decode:function(e){var t="";var n,r,i;var s,o,u,a;var f=0;e=e.replace(/[^A-Za-z0-9+/=]/g,"");while(f<e.length){s=this._keyStr.indexOf(e.charAt(f++));o=this._keyStr.indexOf(e.charAt(f++));u=this._keyStr.indexOf(e.charAt(f++));a=this._keyStr.indexOf(e.charAt(f++));n=s<<2|o>>4;r=(o&15)<<4|u>>2;i=(u&3)<<6|a;t=t+String.fromCharCode(n);if(u!=64){t=t+String.fromCharCode(r)}if(a!=64){t=t+String.fromCharCode(i)}}t=Base64._utf8_decode(t);return t},_utf8_encode:function(e){e=e.replace(/rn/g,"n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}}return t},_utf8_decode:function(e){var t="";var n=0;var r=c1=c2=0;while(n<e.length){r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r);n++}else if(r>191&&r<224){c2=e.charCodeAt(n+1);t+=String.fromCharCode((r&31)<<6|c2&63);n+=2}else{c2=e.charCodeAt(n+1);c3=e.charCodeAt(n+2);t+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63);n+=3}}return t}}
+
+  
+
+    var hash = location.href.substring(location.href.indexOf("?hash=") + "?hash=".length);
+    hash = hash.replace(/_/, "/");
+    hash = hash.replace(/~/, "+");
+    console.log(hash);
+    var decodedString = Base64.decode(hash);
+    decodedString = decodedString.replace(/#/g, " ");
+
+    var radio = decodedString.split(' ');
+    var radio_id = radio[0].substring(radio[0].indexOf('/share/') + '/share/'.length);
+    var logo = radio[1];
+    var background_imege = radio[2];
+</script>
+</head>
+
+
+    <div id="center_img">
+        <img id="logo_img" height="63" src="" alt="Logo">
+    </div>
+        <br><br><br><br>
+	 <center>
+	<div id="vplayer001d42c9"style="width:596px;height:40px;">
 <a href="http://volnorez.com/wnhu" title="радио WNHU">радио WNHU</a>
 <script async type="text/javascript" src="//volnorez.com/plugins/jscode/player_js/001d42c9/%7B%22autoplay%22%3Atrue%2C%22share%22%3A%22source%22%2C%22skin%22%3A%22default%22%2C%22style%22%3A%7B%7D%7D"></script>
-</div>
-<div id="volnorez_chat" data-code="001d42c9" data-skin-params="'bg_clr':'71,57,57','txt_clr':'255,218,207','b_clr':'54,46,46','icon_clr':'61,10,10','btnt_clr':'255,222,207','panel_clr':'81,68,68','msgbg_clr':'90,78,78','omsgbg_clr':'106,95,95','ib_clr':'121,111,111','label_clr':'223,191,181'">
+</div><br/>
+<div id="volnorez_chat" style="width:596px;height:298px;" data-code="001d42c9" data-skin-params="'bg_clr':'71,57,57','txt_clr':'255,218,207','b_clr':'54,46,46','icon_clr':'61,10,10','btnt_clr':'255,222,207','panel_clr':'81,68,68','msgbg_clr':'90,78,78','omsgbg_clr':'106,95,95','ib_clr':'121,111,111','label_clr':'223,191,181'">
 <script async type="text/javascript" src="//volnorez.com/plugins/jscode/chat_js"></script>
 </div>
-		</div>
-</div>
+       
+ 
+            
+            
+            </center>
+        
+    
 </body>
+
+<script type="text/javascript">
+    document.getElementById('logo_img').src = logo;
+    document.getElementById('background').style = 'background-image:url(' + background_imege + ');';
+    document.getElementById('player1').value ="https://volnorez.com/plugins/media/players/liveplayer.swf?showlike=0&amp;jscode_id="+radio_id+"&amp;url=rtmp://s04.volnorez.com/live&amp;bcolor=bf15ad&amp;staturl=https://volnorez.com/flash-listener&amp;skin=https://volnorez.com/application/maxsite/plugins/wcdesign/skins/liveplayer_skin_stripe.swf&amp;skinparams=";
+    document.getElementById('player2').value ="https://volnorez.com/plugins/media/players/liveplayer.swf?showlike=0&amp;jscode_id="+radio_id+"&amp;url=rtmp://s04.volnorez.com/live&amp;bcolor=bf15ad&amp;staturl=https://volnorez.com/flash-listener&amp;skin=https://volnorez.com/application/maxsite/plugins/wcdesign/skins/liveplayer_skin_stripe.swf&amp;skinparams=";
+  setTimeout('$("#window").fadeIn(2000);', 7000);
+  setTimeout('$("#window").fadeOut(1000)', 10000);
+</script>
 </html>
